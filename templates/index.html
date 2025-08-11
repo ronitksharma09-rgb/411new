@@ -1,0 +1,22 @@
+<<!doctype html>
+<html lang="en">
+  <head>
+    <title>DTCC AIP Checker</title>
+    <style>
+      body { font-family: Arial; margin: 40px; }
+      input { padding: 10px; width: 300px; }
+      button { padding: 10px 20px; }
+      .result { margin-top: 20px; font-weight: bold; }
+    </style>
+  </head>
+  <body>
+    <h2>Check if LLC is under DTCC AIP</h2>
+    <form method="POST">
+      <input type="text" name="llc" placeholder="Enter LLC name" required>
+      <button type="submit">Check</button>
+    </form>
+    {% if message %}
+      <div class="result">{{ message }}</div>
+    {% endif %}
+  </body>
+</html>
