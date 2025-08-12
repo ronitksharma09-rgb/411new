@@ -1,5 +1,70 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
     padding: 20px;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Add a centered content container */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Style headings for visual hierarchy */
+h1, h2, h3 {
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Style links with a hover effect */
+a {
+    color: #0077cc;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+a:hover {
+    color: #005999;
+    text-decoration: underline;
+}
+
+/* Buttons with modern look */
+button {
+    background: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+button:hover {
+    background: #005999;
+    transform: translateY(-1px);
+}
+
+/* Inputs for clean form design */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+input:focus, textarea:focus {
+    border-color: #0077cc;
+    box-shadow: 0 0 5px rgba(0, 119, 204, 0.3);
+    outline: none;
 }
